@@ -20,9 +20,6 @@ export const Card = ({data}: CardProps) => {
 
   return (
     <div className="card">
-      <h2>
-        {`${data.level} - (${data.average_salary})`}
-      </h2>
       <div className="level-section">
           <h2>{data.level}</h2>
           <p><strong>Average Salary:</strong> {data.average_salary}</p>
