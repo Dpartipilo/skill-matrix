@@ -6,10 +6,8 @@ export const CardList = () => {
   return (
     <div className='card-list'>
       {frontendDeveloperProgression.map((data: PositionsLevel)=>(
-        <Card data={data}/>
+        <Card key={data.level} data={data}/>
       ))}
-      
-      
-      </div>
+    </div>
   )
 }
